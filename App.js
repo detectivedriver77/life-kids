@@ -410,7 +410,7 @@ function enrichActivity(activity, worldId, missionId, index) {
   if (gameMode === "avoid") {
     const wrong = activity.answers.map((value, originalIndex) => ({ value, originalIndex })).filter(x => x.originalIndex !== activity.correct);
     const shuffled = stableShuffle(wrong, `${worldId}-${missionId}-${activity.title}-avoid`);
-    return { ...activity, gameMode, question: `Quel choix faut-il éviter ? ${activity.question}`, answers: shuffled.map(x => x.value), answerMap: shuffled.map(x => x.originalIndex), correctDisplayIndex: -1, acceptsAnyWrong: true, explanation: "Ce choix peut entraîner un problème. Le bon réflexe est de choisir une solution plus sûre et adaptée." };
+    return { ...activity, gameMode, question: `Quel choix faut-il éviter ? ${activity.question}`, answers: shuffled.map(x => x.value.value), answerMap: shuffled.map(x => x.value.originalIndex), correctDisplayIndex: -1, acceptsAnyWrong: true, explanation: "Ce choix peut entraîner un problème. Le bon réflexe est de choisir une solution plus sûre et adaptée." };
   }
   const shuffled = stableShuffle(activity.answers, `${worldId}-${missionId}-${activity.title}`);
   return { ...activity, gameMode, answers: shuffled.map(item => item.value), answerMap: shuffled.map(item => item.originalIndex), correctDisplayIndex: shuffled.findIndex(item => item.originalIndex === activity.correct) };
