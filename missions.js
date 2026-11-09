@@ -1,0 +1,51 @@
+// 36 missions – 6 par monde
+export const MISSIONS = {
+  money: [
+    { id: "m1", title: "Mon premier porte-monnaie", goal: "Reconnaître les pièces et comprendre leur utilité" },
+    { id: "m2", title: "Le jouet à 7 €", goal: "Comparer un prix et l'argent disponible" },
+    { id: "m3", title: "Le choix du goûter", goal: "Faire un choix raisonnable avec une petite somme" },
+    { id: "m4", title: "L'épargne de Pip", goal: "Comprendre qu'on peut mettre de l'argent de côté" },
+    { id: "m5", title: "Besoin ou envie ?", goal: "Distinguer un besoin essentiel d'une envie" },
+    { id: "m6", title: "Mon petit projet", goal: "Préparer un achat en plusieurs étapes" },
+  ],
+  shops: [
+    { id: "m1", title: "La liste de Pip", goal: "Comprendre l'utilité d'une liste de courses" },
+    { id: "m2", title: "Le bon prix", goal: "Comparer deux prix pour le même produit" },
+    { id: "m3", title: "Le panier malin", goal: "Composer un panier varié et raisonnable" },
+    { id: "m4", title: "Compter les articles", goal: "Compter et additionner des quantités" },
+    { id: "m5", title: "À la boulangerie", goal: "Choisir et payer un aliment simple" },
+    { id: "m6", title: "Les courses réussies", goal: "Vérifier liste, prix et dates" },
+  ],
+  wellbeing: [
+    { id: "m1", title: "Le réveil de Pip", goal: "Comprendre l'importance du sommeil" },
+    { id: "m2", title: "Les mains propres", goal: "Savoir quand et pourquoi se laver les mains" },
+    { id: "m3", title: "Le goûter équilibré", goal: "Reconnaître un goûter varié" },
+    { id: "m4", title: "Bouger chaque jour", goal: "Comprendre que bouger est bon pour le corps" },
+    { id: "m5", title: "Bien dormir", goal: "Identifier les bonnes habitudes avant le coucher" },
+    { id: "m6", title: "Je prends soin de moi", goal: "Associer plusieurs gestes de bien-être" },
+  ],
+  home: [
+    { id: "m1", title: "Ma chambre rangée", goal: "Comprendre pourquoi ranger ses affaires" },
+    { id: "m2", title: "Je prépare mes affaires", goal: "Préparer son sac pour éviter d'oublier" },
+    { id: "m3", title: "Mettre la table", goal: "Participer à une tâche familiale simple" },
+    { id: "m4", title: "Le linge à sa place", goal: "Savoir où mettre les vêtements sales" },
+    { id: "m5", title: "Je prends soin de mes objets", goal: "Prendre soin de ses affaires" },
+    { id: "m6", title: "La maison en équipe", goal: "Comprendre qu'on aide selon son âge" },
+  ],
+  safety: [
+    { id: "m1", title: "Je traverse en sécurité", goal: "Traverser avec un adulte en vérifiant" },
+    { id: "m2", title: "Je reste près de l'adulte", goal: "Rester proche dans un lieu public" },
+    { id: "m3", title: "Les inconnus", goal: "Ne jamais partir avec une personne inconnue" },
+    { id: "m4", title: "À la maison, prudence", goal: "Reconnaître des dangers domestiques simples" },
+    { id: "m5", title: "Je connais les secours", goal: "Savoir que le 112 sert pour les urgences" },
+    { id: "m6", title: "Mes bons réflexes", goal: "Demander de l'aide à un adulte de confiance" },
+  ],
+  help: [
+    { id: "m1", title: "Un ami a besoin d'aide", goal: "Réagir avec bienveillance face à un camarade" },
+    { id: "m2", title: "Les mots gentils", goal: "Utiliser des mots respectueux" },
+    { id: "m3", title: "Jouer ensemble", goal: "Partager et faire un tour de rôle" },
+    { id: "m4", title: "Dire ce que je ressens", goal: "Exprimer une émotion simplement" },
+    { id: "m5", title: "Demander de l'aide", goal: "Comprendre que demander de l'aide est normal" },
+    { id: "m6", title: "L'équipe de Pip", goal: "Coopérer et écouter les autres" },
+  ],
+};
